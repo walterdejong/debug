@@ -16,27 +16,27 @@ this package. Take it, as a convenience to ease your life in software dev.
 Step 1. Import the package.
 
 ```go
-		import "github.com/walterdejong/debug"
+    import "github.com/walterdejong/debug"
 ```
 
 Step 2. Enable debug mode. Additionally, you may configure the colors
 and/or the output file handle.
 
 ```go
-		debug.Enabled = true
+    debug.Enabled = true
 
-		// change colorization (if we want to)
-		debug.Info = debug.DarkCyan
-		debug.Message = debug.Cyan
+    // change colorization (if we want to)
+    debug.Info = debug.DarkCyan
+    debug.Message = debug.Cyan
 
-		// change output to stdout (default is stderr)
-		debug.SetOutput(os.Stdout)
+    // change output to stdout (default is stderr)
+    debug.SetOutput(os.Stdout)
 ```
 
 Step 3. Log messages. `Debug()` works just like `fmt.Printf()`.
 
 ```go
-		debug.Debug("the value of x == %#v", x)
+    debug.Debug("the value of x == %#v", x)
 ```
 
 This produces output like:
