@@ -16,7 +16,7 @@ this package. Take it, as a convenience to ease your life in software dev.
 Step 1. Import the package.
 
 ```go
-    import "github.com/walterdejong/debug"
+import "github.com/walterdejong/debug"
 ```
 
 Step 2. Enable debug mode. Additionally, you may configure the colors
@@ -42,7 +42,7 @@ Step 3. Log messages. `Debug()` works just like `fmt.Printf()`.
 This produces output like:
 
 ```
-    % file.go:42 pkg.MyFunction() the value of x == []int{1, 2, 3}
+% file.go:42 pkg.MyFunction() the value of x == []int{1, 2, 3}
 ```
 
 See also the provided [example program](example/example.go).
